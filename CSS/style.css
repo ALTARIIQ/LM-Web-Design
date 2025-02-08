@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+.hero {
+    
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.5)),
+                url("media/gif.gif") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #5981b1;   
+    
+}
+
+.hero-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 23px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, #ffffff,#2e2060);
+    background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    animation: glowText  2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+   letter-spacing: 5px;
+}
+
+section {
+    padding: 5rem 2rem;
+}
+
+.brands-section {
+    background: #000000;
+}
+
+.h2-style{ 
+    text-transform:capitalize;
+    letter-spacing: 23px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, #ffffff,#2e2060);
+    background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    animation: glowText 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.featured-section {
+    background: #000000;
+}
+
+.filter-bar {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter-bar select {
+
+    background:linear-gradient(to top,#510303,#aa0505) ;
+    color: rgb(255, 253, 253);
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.filter-bar select option {
+    background-color: #510303;  
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.category-btn {
+    background:linear-gradient(to top,#510303,#aa0505);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.category-btn.active {
+    background:white;
+    color: #000;
+}
+
+
+.contact-section {
+    background: #000000;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.contact-input{
+    border: none;
+    outline: none;
+
+}
+.contact-input:focus{
+    border:2px solid #0d406d;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    background: #2e2060;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:1.5s;
+}
+
+.contact-form button:hover {
+    background: #510303;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+.social-icons a{
+    color: #2e2060;
+    font-size: 50px;
+    padding-right: 2rem;
+    transition: 1.5s;
+}
+
+.social-icons a:hover{
+    color: #510303;
+    transform: scale(1.7);
+}
+
+footer {
+    
+    background: #510303;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@keyframes glowText {
+    from {
+        filter: drop-shadow(0 0 10px rgba(240, 237, 237, 0.733));
+    }
+    to {
+        filter: drop-shadow(0 0 10px rgb(168, 3, 3));
+    }
+    
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official-Legendary MOTORSPORT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+         <div class="logo-icon">
+            <img src="CSS/media/LegendaryMotorsport-GTAV-Logo.webp" alt="logo-icon">
+        </div> 
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#brands">companies</a></li>
+            <li><a href="#vehicle">Featured</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+        
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">CHOOSE FROM MY TOP</h1>
+            <p>High Performance Cars At Great Prices</p>
+        </div>
+    </header>
+
+    <section id="brands" class="brands-section">
+        <h2 class="h2-style">Premium companies</h2>
+        <div class="brand-grid" id="brandGrid">
+            <!-- companies cards will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <section id="vehicle" class="featured-section">
+        <div class="filter-bar">
+            <select id="sortPrice">
+                <option value="">Sort by Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+        <nav class="categories">
+            <button class="category-btn active">FEATURED</button>
+            <button class="category-btn">2 DOOR</button>
+            <button class="category-btn">4 DOOR</button>
+            <button class="category-btn">MOTORCYCLES</button>
+            <button class="category-btn">SPECIAL</button>
+        </nav>
+        <div class="vehicle-grid" >
+            <!-- Vehicle cards will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="h2-style">Contact Us</h2>
+        <form action=""class="contact-form">
+            <input type="text" placeholder="Name" id="name" class="contact-input" required>
+            <input  type="email" placeholder="Email" id="email" class="contact-input" required>
+            <textarea placeholder="Message" id="message" class="contact-input" required></textarea>
+            <button onclick="submitForm()">Send Message</button>
+        </form>
+        
+        <div class="social-icons">
+            <a href="https://x.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@CustomCarsofGTA/featured"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; since 2025 - LegendaryMotorsport. <br>All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/data.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

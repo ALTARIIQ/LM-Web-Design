@@ -1,0 +1,114 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.background-clip{
+    position: absolute;
+    right: 0 ;
+    bottom: 0;
+    
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px 5px #510303;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.logo-icon{
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-group {
+    position: relative;   
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #32275a;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login-form button {
+    background:linear-gradient(to top,#510303,#aa0505);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255, 33, 33, 0.4);
+}
+
+.form-footer {
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.form-footer a {
+    color: #aa0505;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #ff0505;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
