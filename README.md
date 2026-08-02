@@ -36,3 +36,12 @@ A dynamic web built as part of the *Introduction to Web Programming* course at N
 │   └── main.js
 ├── index.html
 └── login.html
+```
+---
+## How to Run the Project locally
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/ALTARIIQ/LM-Web-Design.git](https://github.com/ALTARIIQ/LM-Web-Design.git)
+```markdown
+2. Open the project folder.
+3. Open `index.html` in any web browser to view the application.
