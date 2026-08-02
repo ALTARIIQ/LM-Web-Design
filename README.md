@@ -1,6 +1,6 @@
-## Legendary Motorsport Showcase Web App
+## Legendary Motorsport Showcase Web Design
 
-A dynamic web application built as part of the *Introduction to Web Programming* course at Nişantaşı University. The project is inspired by the iconic "Legendary Motorsport" interface, offering a sleek platform to browse, showcase, and interact with high-end luxury vehicles.
+A dynamic web built as part of the *Introduction to Web Programming* course at Nişantaşı University. The project is inspired by the iconic "Legendary Motorsport" interface, offering a sleek platform to browse, showcase, and interact with high-end luxury vehicles.
 
 ---
 ## Features
